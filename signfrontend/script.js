@@ -40,12 +40,13 @@ async function signup() {
       
       if(response.data.token){
       const token = response.data.token;
-      await axios.get("http://localhost:3000/me", {
-                        headers: {
-                            // Include the token in the request headers for authentication
-                            token : localStorage.getItem("token"),
-                        },
-                    });
+      // await axios.get("http://localhost:3000/me", {
+      //                   headers: {
+      //                       // Include the token in the request headers for authentication
+      //                       token : localStorage.getItem("token"),
+      //                   },
+      //               });
+       localStorage.setItem("token", response.data.token);
      
 
       // Navigate to protected dashboard
