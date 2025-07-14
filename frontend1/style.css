@@ -1,0 +1,106 @@
+  
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: url('illustration-anime-city.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+    }
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(25px) saturate(180%);
+      -webkit-backdrop-filter: blur(25px) saturate(180%);
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      transition: background-color 0.5s ease-in-out;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      
+    }
+    .todo-form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .todo-form input, .todo-form button {
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+    .todo-form input[type="text"] {
+      flex: 1 1 60%;
+    }
+    .todo-form input[type="datetime-local"] {
+      flex: 1 1 30%;
+    }
+    .todo-form button {
+      background-color: #00c6ff;
+      color: #fff;
+      flex: 1 1 100%;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .todo-form button:hover {
+      background-color: #0074e4;
+    }
+    .todo-item {
+      background: rgba(255,255,255,0.2);
+      border-radius: 12px;
+      padding: 15px;
+      margin-bottom: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: transform 0.2s ease-in-out, background 0.3s;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+    .todo-item:hover {
+      transform: translateY(-3px);
+      background: rgba(255, 255, 255, 0.3);
+    }
+    .todo-content input {
+      width: 100%;
+      background: transparent;
+      border: none;
+      color: white;
+      font-size: 18px;
+      margin-bottom: 5px;
+      outline: none;
+    }
+    .todo-time {
+      font-size: 13px;
+      color: #e0e0e0;
+    }
+    .actions button {
+      margin-left: 6px;
+      padding: 6px 10px;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      color: white;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .edit { background-color: #ffc107; }
+    .save { background-color: #28a745; }
+    .delete { background-color: #dc3545; }
+    .actions button:hover { opacity: 0.85; }
+  
